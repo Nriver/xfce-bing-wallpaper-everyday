@@ -18,12 +18,12 @@ python3 xfce_bing_wallpaper_everyday.py
 路径换成你自己的
 
 ```
-05 01 * * * python3 /home/nate/gitRepo/manjaro_xfce_bing_wallpaper/manjaro_bing_wallpaper_everyday.py
+05 01 * * * python3 /home/nate/gitRepo/xfce-bing-wallpaper-everyday/xfce_bing_wallpaper_everyday.py
 ```
 
 如果执行不了，可以加上日志输出
 ```
-20 09 * * * python3 /home/nate/gitRepo/manjaro_xfce_bing_wallpaper/manjaro_bing_wallpaper_everyday.py > /home/nate/.bing/bing.log 2>&1
+20 09 * * * python3 /home/nate/gitRepo/xfce-bing-wallpaper-everyday/xfce_bing_wallpaper_everyday.py > /home/nate/.bing/bing.log 2>&1
 ```
 
 # 还原
