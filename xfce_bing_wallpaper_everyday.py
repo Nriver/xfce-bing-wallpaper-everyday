@@ -57,11 +57,15 @@ def change_wallpaper(new_wallpaper_path):
         if any([y in x for y in ['image-path', 'last-image', 'last-single-image']]):
             print(x)
             # 替换图片属性
-            cmd = f'xfconf-query -c xfce4-desktop -p {x} -s "{new_wallpaper_path}"'
-            os.system(cmd)
+            # 使用参数化执行，避免出现引号等符号干扰命令运行
+            subprocess.run([
+                "xfconf-query",
+                "-c", "xfce4-desktop",
+                "-p", x,
+                "-s", new_wallpaper_path
+            ], check=True)
 
 
 image_path = get_bing_wallpaper()
-# print(image_path)
 change_wallpaper(image_path)
 print('执行完毕！')
