@@ -1,5 +1,7 @@
 # xfce-bing-wallpaper-everyday
 
+[🇬🇧 English Version](./README_EN.md) | 中文版
+
 🖼️ 一个简单的 Python 脚本，用于在 XFCE 桌面环境下**每天自动更换 Bing 每日壁纸**。
 
 🔍 脚本会自动检测运行环境：
